@@ -704,6 +704,8 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 /**/
 
+
+
 /*Cajas*/
 .bck-box {
 	max-width: 100%;
@@ -1282,24 +1284,44 @@ table td.bck-td {
 }
 
 .casals_demo-dropdown .bck-dropdown-icon > .fa, .casals_demo-dropdown-2 .bck-dropdown-icon > .fa {
-	border: 3px solid white;
+    border: 0px solid white;
+    color: #333;
+    margin-top: 10px;
+    padding: 0px;
 }
 
 .casals_demo-dropdown .bck-dropdown-titulo, .casals_demo-dropdown-2 .bck-dropdown-titulo{
-	color: white;
+    color: #000;
+    font-size: 1.9rem;
+    margin-left: 31px;
+    display: inline-block;
+    text-align: left
 }
 
 /*Desplegable 1*/
 .bck-dropdown.casals_demo-dropdown {
-	background-color: #FBA81C;
+    background-color: #FFF3C9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
 }
 
 .casals_demo-dropdown .bck-dropdown-icon {
-	background-color: #FBA81C;
+    background-color: #FFF3C9;
+    width: 10px;
+    height: 10px;
+    margin: 10px 10px;
+    display: inline-block;
+    position: absolute;
 }
 
 .casals_demo-dropdown .bck-dropdown-content {
-	background-color: #F2E7D1;
+    background-color: #fff;
+    font-size: 1.6rem;
+    border: 2px solid #FFF3C9;
+}
+
+.bck-dropdown-content{
+   max-height: 2000px;
 }
 
 /**/
