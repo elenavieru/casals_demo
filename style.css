@@ -1299,7 +1299,7 @@ table td.bck-td {
 }
 
 /*Desplegable 1*/
-.bck-dropdown.casals_demo-dropdown {
+.bck-dropdown .casals_demo-dropdown {
     background-color: #FFF3C9;
     border-top-left-radius: 20px;
     border-top-right-radius: 0px;
@@ -1327,7 +1327,7 @@ table td.bck-td {
 /**/
 
 /*Desplegable 2*/
-.bck-dropdown.casals_demo-dropdown-2 {
+.bck-dropdown .casals_demo-dropdown-2 {
 	background-color: #9665AB;
 }
 
