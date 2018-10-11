@@ -2,17 +2,17 @@
 (function (blink) {
 	'use strict';
 
-	var LnplatStyle = function () {
+	var casals_demoStyle = function () {
 			blink.theme.styles.basic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	LnplatStyle.prototype = {
+	casals_demoStyle.prototype = {
 		//BK-15873 aÃ±adimos el estilo basic como parent para la herencia de los estilos del CKEditor
 		parent: blink.theme.styles.basic.prototype,
-		bodyClassName: 'content_type_clase_lnplat',
+		bodyClassName: 'content_type_clase_casals_demo',
 		ckEditorStyles: {
-			name: 'lnplat',
+			name: 'casals_demo',
 			styles: [
 				{ name: 'TÃ­tulo 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
 				{ name: 'TÃ­tulo 2', element: 'h3', attributes: { 'class': 'bck-title2'} },
@@ -59,8 +59,8 @@
 				{ name: 'Escuchar', type: 'widget', widget: 'blink_box', attributes: { 'class': 'escuchar-box' } },
 				{ name: 'Actividad Scorm ', type: 'widget', widget: 'blink_box', attributes: { 'class': 'actividad-scorm-box' } },
 
-				{ name: 'Desplegable', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'lnplat-dropdown' } },
-				{ name: 'Desplegable 2', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'lnplat-dropdown-2' } },
+				{ name: 'Desplegable', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'casals_demo-dropdown' } },
+				{ name: 'Desplegable 2', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'casals_demo-dropdown-2' } },
 
 				{ name: 'Imagen Sin Bordes', type: 'widget', widget: 'image', attributes: { 'class': 'normal-img' } },
 				{ name: 'Imagen derecha', element: 'img', attributes: { 'class': 'bck-img right' } },
@@ -168,7 +168,7 @@
 					'</div>';
 
 			$navbarBottom
-				.attr('class', 'lnplat-navbar')
+				.attr('class', 'casals_demo-navbar')
 				.wrapInner('<div class="navbar-content"></div>')
 				.find('ol')
 					.before(dropDown)
@@ -329,7 +329,7 @@
 
 		animateNavbarOnScroll: function () {
 			if (!blink.isApp) return;
-			var $navbar = $('.lnplat-navbar');
+			var $navbar = $('.casals_demo-navbar');
 			var lastScrollTop = 0;
 			$('.js-slider-item').scroll(function () {
 				var scrollTop = $(this).scrollTop();
@@ -339,14 +339,14 @@
 		},
 
                 changeHighBar: function () {
-                    if($('.lnplat-navbar').length>0 && $('.navbar').length>0){
-                        blink.theme.setTopByHeight('.navbar', '.lnplat-navbar');
+                    if($('.casals_demo-navbar').length>0 && $('.navbar').length>0){
+                        blink.theme.setTopByHeight('.navbar', '.casals_demo-navbar');
                     }
                 }
 	};
 
-	LnplatStyle.prototype = _.extend({}, new blink.theme.styles.basic(), LnplatStyle.prototype);
+	casals_demoStyle.prototype = _.extend({}, new blink.theme.styles.basic(), casals_demoStyle.prototype);
 
-	blink.theme.styles['lnplat'] = LnplatStyle;
+	blink.theme.styles['casals_demo'] = casals_demoStyle;
 
 })( blink );
