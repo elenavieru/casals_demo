@@ -14,17 +14,19 @@
 		ckEditorStyles: {
 			name: 'casals_demo',
 			styles: [
-				{ name: 'TÃ­tulo 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
-				{ name: 'TÃ­tulo 2', element: 'h3', attributes: { 'class': 'bck-title2'} },
-				{ name: 'TÃ­tulo 3', element: 'h3', attributes: { 'class': 'bck-title3'} },
+				{ name: 'Titulo 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
+				{ name: 'Titulo 2', element: 'h3', attributes: { 'class': 'bck-title2'} },
+				{ name: 'Titulo 3', element: 'h3', attributes: { 'class': 'bck-title3'} },
 
-				{ name: 'Ã‰nfasis', element: 'span', attributes: { 'class': 'bck-enfasis'} },
-				{ name: 'Ã‰nfasis Naranja', element: 'span', attributes: { 'class': 'bck-enfasis-naranja'} },
+				{ name: 'Enfasis', element: 'span', attributes: { 'class': 'bck-enfasis'} },
+				{ name: 'Enfasis Naranja', element: 'span', attributes: { 'class': 'bck-enfasis-naranja'} },
+				
 				//BK-15873 Quitamos el estilo versalitas, ya que lo hereda de basic
 
-				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
+				{ name: 'Lista Desordenada 1', element: 'ul', attributes: { 'class': 'bck-ul'} },
 				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
 				{ name: 'Lista Desordenada 3', element: 'ul', attributes: { 'class': 'bck-ul-3'} },
+				{ name: 'Lista Desordenada 4', element: 'ul', attributes: { 'class': 'bck-ul-4'} },
 				{ name: 'Lista Ordenada', element: 'ol', attributes: { 'class': 'bck-ol' } },
 				{ name: 'Lista Ordenada 2', element: 'ol', attributes: { 'class': 'bck-ol-2' } },
 
