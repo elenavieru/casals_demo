@@ -684,6 +684,17 @@ body.is_app .casals_demo-navbar.ocultar {
 	 counter-reset: bck-li-counter;
 }
 
+#actividad .content .texto_curso .bck-ol-3 li:before,
+#actividad .content .workspace ul li .bck-ol-3 li:before {
+	content: counter(bck-li-counter)'.-';
+	position: absolute;
+	left: -47px;
+	width: 38px;
+	text-align: right;
+	color: #9665AB;
+}
+
+
 #actividad .content .texto_curso .bck-ol-2 li,
 #actividad .content .workspace ul li .bck-ol-2 li {
 	counter-increment: bck-li-counter;
