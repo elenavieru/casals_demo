@@ -87,6 +87,8 @@ input, button, select, textarea {
 
 /**/
 
+
+
 .content_type_clase_casals_demo #actividad .texto_curso {
 	font-size: 1.8rem;
 }
@@ -678,20 +680,11 @@ body.is_app .casals_demo-navbar.ocultar {
 	color: #9665AB;
 }
 
+/*lista 2*/
 #actividad .content .texto_curso .bck-ol-2,
 #actividad .content .workspace ul li .bck-ol-2 {
 	list-style-type: none;
 	 counter-reset: bck-li-counter;
-}
-
-#actividad .content .texto_curso .bck-ol-3 li:before,
-#actividad .content .workspace ul li .bck-ol-3 li:before {
-	content: counter(bck-li-counter)'.-';
-	position: absolute;
-	left: -47px;
-	width: 38px;
-	text-align: right;
-	color: #9665AB;
 }
 
 
@@ -713,6 +706,36 @@ body.is_app .casals_demo-navbar.ocultar {
     padding-right: 8px;
     text-align: left;
 }
+
+/*lista 3*/
+#actividad .content .texto_curso .bck-ol-3,
+#actividad .content .workspace ul li .bck-ol-3 {
+	list-style-type: none;
+	counter-reset: bck-li-counter;
+}
+
+
+#actividad .content .texto_curso .bck-ol-3 li,
+#actividad .content .workspace ul li .bck-ol-3 li {
+	counter-increment: bck-li-counter;
+	padding-left: 4px;
+	position: relative;
+	z-index: 0;
+}
+
+#actividad .content .texto_curso ol.bck-ol-3 li:before,
+#actividad .content .workspace ul li ol.bck-ol-3 li:before {
+	content: counter(bck-li-counter)'.-';
+	color: #9665AB;
+	font-size: 2.3rem;
+    margin-left: -32px;
+    margin-top: -1px;
+    padding-right: 8px;
+    text-align: left;
+}
+
+
+
 /**/
 
 
