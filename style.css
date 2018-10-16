@@ -728,7 +728,7 @@ body.is_app .casals_demo-navbar.ocultar {
     content: counter(bck-li-counter);
     color: #333333ed;
     font-size: 1.9rem;
-    margin-left: -32px;
+    margin-left: -21px;
     font-weight: 600;
     margin-top: -1px;
     font-family: sans-serif;
