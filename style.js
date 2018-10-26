@@ -1,3 +1,5 @@
+copia seguridad js
+
 (function (blink) {
 	'use strict';
 
@@ -7,89 +9,64 @@
 		page = blink.currentPage;
 
 	casals_demoStyle.prototype = {
+		//BK-15873 aÃ±adimos el estilo basic como parent para la herencia de los estilos del CKEditor
+		parent: blink.theme.styles.basic.prototype,
 		bodyClassName: 'content_type_clase_casals_demo',
 		ckEditorStyles: {
 			name: 'casals_demo',
 			styles: [
-				{ name: 'Título 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
-				{ name: 'Título 2', element: 'h3', attributes: { 'class': 'bck-title2'} },
-				{ name: 'Título 3', element: 'h3', attributes: { 'class': 'bck-title3'} },
+				{ name: 'Titulo 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
+				{ name: 'Titulo 2', element: 'h3', attributes: { 'class': 'bck-title2'} },
+				{ name: 'Titulo 3', element: 'h3', attributes: { 'class': 'bck-title3'} },
+				{ name: 'Titulo 4', element: 'h3', attributes: { 'class': 'bck-title4'} },
+				{ name: 'Titulo Síntesis', element: 'h3', attributes: { 'class': 'bck-title5'} },
+				{ name: 'Titulo Evaluación', element: 'h3', attributes: { 'class': 'bck-title6'} },
+				{ name: 'Titulo Actividades', element: 'h3', attributes: { 'class': 'bck-title7'} },
 
-				{ name: 'Énfasis', element: 'span', attributes: { 'class': 'bck-enfasis'} },
-				{ name: 'Énfasis Naranja', element: 'span', attributes: { 'class': 'bck-enfasis-naranja'} },
-				{ name: 'Versalitas', element: 'span', attributes: { 'class': 'bck-versalitas'} },
+				{ name: 'Enfasis azul', element: 'span', attributes: { 'class': 'bck-enfasis'} },
+				{ name: 'Enfasis rosa', element: 'span', attributes: { 'class': 'bck-enfasis-naranja'} },
+				
+				//BK-15873 Quitamos el estilo versalitas, ya que lo hereda de basic
 
-				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
-				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
-				{ name: 'Lista Desordenada 3', element: 'ul', attributes: { 'class': 'bck-ul-3'} },
-				{ name: 'Lista Ordenada', element: 'ol', attributes: { 'class': 'bck-ol' } },
-				{ name: 'Lista Ordenada 2', element: 'ol', attributes: { 'class': 'bck-ol-2' } },
+				{ name: 'Lista Desordenada azul', element: 'ul', attributes: { 'class': 'bck-ul'} },
+				{ name: 'Lista Desordenada naranja', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
+				{ name: 'Lista Desordenada negra', element: 'ul', attributes: { 'class': 'bck-ul-3'} },
+				{ name: 'Lista Ordenada azul', element: 'ol', attributes: { 'class': 'bck-ol' } },
+				{ name: 'Lista Ordenada rosa', element: 'ol', attributes: { 'class': 'bck-ol-2' } },
+				{ name: 'Lista Ordenada negra', element: 'ol', attributes: { 'class': 'bck-ol-3' } },
+				{ name: 'Lista Ordenada letra', element: 'ol', attributes: { 'class': 'bck-ol-4' } },
 
-				{ name: 'Caja simple', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple' } },
-				{ name: 'Caja simple 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple-2' } },
-				{ name: 'Caja simple 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple-3' } },
+				{ name: 'Caja ideas', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple' } },
+				{ name: 'Caja azul', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple-2' } },
+				{ name: 'Caja rosa', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple-3' } },
+				{ name: 'Caja actividades', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple-4' } },
 
 				{ name: 'Tabla', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table'} },
 				{ name: 'Celda', element: 'td', attributes: { 'class': 'bck-td'} },
 
-				{ name: 'Presentación', element: 'h4', attributes: { 'class': 'presentation'} },
-				{ name: 'Presentación 2', element: 'h4', attributes: { 'class': 'presentation-2'} },
-				{ name: 'Título Presentación Video', element: 'h4', attributes: { 'class': 'titulo-video'} },
-				{ name: 'Título Presentación Video 2', element: 'h4', attributes: { 'class': 'titulo-video-2'} },
-				{ name: 'Actividad Scorm', element: 'h4', attributes: { 'class': 'actividad-scorm'} },
-				{ name: 'Actividad Blink', element: 'h4', attributes: { 'class': 'actividad-blink'} },
-				{ name: 'Título Slider Imágen', element: 'h4', attributes: { 'class': 'slider-imagen'} },
-				{ name: 'Título Trabajar Imágen', element: 'h4', attributes: { 'class': 'trabajar-imagen'} },
-				{ name: 'Título Escuchar', element: 'h4', attributes: { 'class': 'titulo-escuchar'} },
-
-				{ name: 'Título2 Hablar', element: 'h4', attributes: { 'class': 'titulo-2 hablar'} },
-				{ name: 'Título2 Escuchar', element: 'h4', attributes: { 'class': 'titulo-2 escuchar'} },
-				{ name: 'Título2 Leer', element: 'h4', attributes: { 'class': 'titulo-2 leer'} },
-				{ name: 'Título2 Escribir', element: 'h4', attributes: { 'class': 'titulo-2 escribir'} },
-				{ name: 'Título2 Aprender', element: 'h4', attributes: { 'class': 'titulo-2 aprender'} },
-
-				{ name: 'Presentación Imagen', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-img' } },
-				{ name: 'Presentación Video', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-video' } },
-				{ name: 'Presentación Video 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-video-2' } },
-				{ name: 'Slider Imagen', type: 'widget', widget: 'blink_box', attributes: { 'class': 'slider-img' } },
-				{ name: 'Trabajar Imagen', type: 'widget', widget: 'blink_box', attributes: { 'class': 'trabajar-img' } },
-				{ name: 'Escuchar', type: 'widget', widget: 'blink_box', attributes: { 'class': 'escuchar-box' } },
-				{ name: 'Actividad Scorm ', type: 'widget', widget: 'blink_box', attributes: { 'class': 'actividad-scorm-box' } },
-
 				{ name: 'Desplegable', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'casals_demo-dropdown' } },
-				{ name: 'Desplegable 2', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'casals_demo-dropdown-2' } },
 
-				{ name: 'Imagen Sin Bordes', type: 'widget', widget: 'image', attributes: { 'class': 'normal-img' } },
-				{ name: 'Imagen derecha', element: 'img', attributes: { 'class': 'bck-img right' } },
-				{ name: 'Imagen izquierda', element: 'img', attributes: { 'class': 'bck-img left' } },
-
-				{ name: 'Icono Clase', element: 'span', attributes: { 'class': 'icon icon-clase' } },
-				{ name: 'Icono Clase Rosa', element: 'span', attributes: { 'class': 'icon icon-clase-rosa' } },
-				{ name: 'Icono Conversación', element: 'span', attributes: { 'class': 'icon icon-conversation' } },
-				{ name: 'Icono Conversación Verde', element: 'span', attributes: { 'class': 'icon icon-conversation-verde' } },
-				{ name: 'Icono Conversación Azul', element: 'span', attributes: { 'class': 'icon icon-conversation-azul' } },
-				{ name: 'Icono Conversación Rosa', element: 'span', attributes: { 'class': 'icon icon-conversation-rosa' } },
-				{ name: 'Icono Herramienta', element: 'span', attributes: { 'class': 'icon icon-tool' } },
-				{ name: 'Icono Herramienta Verde', element: 'span', attributes: { 'class': 'icon icon-tool-verde' } },
-				{ name: 'Icono Herramienta Azul', element: 'span', attributes: { 'class': 'icon icon-tool-azul' } },
-				{ name: 'Icono Herramienta Rosa', element: 'span', attributes: { 'class': 'icon icon-tool-rosa' } },
-				{ name: 'Icono Llave', element: 'span', attributes: { 'class': 'icon icon-llave' } },
-				{ name: 'Icono Ratón', element: 'span', attributes: { 'class': 'icon icon-raton' } },
-				{ name: 'Icono Museo', element: 'span', attributes: { 'class': 'icon icon-museo' } },
-				{ name: 'Icono Talento', element: 'span', attributes: { 'class': 'icon icon-talento' } },
-				{ name: 'Icono Talento 2', element: 'span', attributes: { 'class': 'icon icon-talento-2' } },
-				{ name: 'Icono Talento Verde', element: 'span', attributes: { 'class': 'icon icon-talento-verde' } },
-
-				{ name: 'icono ablink', element: 'span', attributes: { 'class': 'icono ablink' } },
-				{ name: 'icono ascorm', element: 'span', attributes: { 'class': 'icono ascorm' } }
+				{ name: 'Icono CI', element: 'span', attributes: { 'class': 'icon icon-CI' } },
+				{ name: 'Icono CS', element: 'span', attributes: { 'class': 'icon icon-CS' } },
+				{ name: 'Icono CT', element: 'span', attributes: { 'class': 'icon icon-CT' } },
+				{ name: 'Icono CA', element: 'span', attributes: { 'class': 'icon icon-CA' } },
+				{ name: 'Icono CC', element: 'span', attributes: { 'class': 'icon icon-CC' } },
+				{ name: 'Icono CD', element: 'span', attributes: { 'class': 'icon icon-CD' } },
+				{ name: 'Icono CL', element: 'span', attributes: { 'class': 'icon icon-CL' } },
+				{ name: 'Icono Video', element: 'span', attributes: { 'class': 'icon icon-video' } },
+				{ name: 'Icono Mapa', element: 'span', attributes: { 'class': 'icon icon-mapa' } },
+				{ name: 'Icono Enlace', element: 'span', attributes: { 'class': 'icon icon-enlace' } }
+				
 			]
 		},
 		slidesTitle: {},
 
 		init: function () {
-			var parent = blink.theme.styles.basic.prototype;
-			parent.init.call(this);
+			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
+			this.parent.init.call(this);
 			this.addActivityTitle();
+			if(window.esWeb) return;
+			this.removeFinalSlide();
 			this.fillSlidesTitle();
 			this.formatCarouselindicators();
 			this.animateNavbarOnScroll();
@@ -97,8 +74,8 @@
 		},
 
 		removeFinalSlide: function () {
-			var parent = blink.theme.styles.basic.prototype;
-			parent.removeFinalSlide.call(this, true);
+			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
+			this.parent.removeFinalSlide.call(this, true);
 		},
 
 		configEditor: function (editor) {
@@ -201,13 +178,14 @@
 						'<ul class="dropdown-menu" role="menu" aria-labelledby="tLabel">';
 
 				for (var i in units) {
-					var title = units[i].title;
+					var title = units[i].title,
+					    idTema = units[i].id;
 					if (title && units[i].subunits.length) { //Si el tema tiene actividades
 						dropDownTemas += '' +
 							'<li role="presentation" class="lista-temas" data-url="' + units[i].subunits[0].url + '">' +
 								'<span>'+ units[i].number + '</span><a role="menuitem">' + title + '</a>' +
 							'</li>'
-						if (title == blink.courseInfo.unit) number = units[i].number;
+						if (idTema == blink.courseInfo.IDUnit) number = units[i].number;
 					}
 				}
 
@@ -319,9 +297,7 @@
 				});
 		},
 
-		getEditorStyles: function () {
-			return this.ckEditorStyles;
-		},
+		//BK-15873 Quitamos la funcion getEditorStyles para que la herede de basic
 
 		animateNavbarOnScroll: function () {
 			if (!blink.isApp) return;
@@ -333,7 +309,7 @@
 				lastScrollTop = scrollTop;
 			});
 		},
-                
+
                 changeHighBar: function () {
                     if($('.casals_demo-navbar').length>0 && $('.navbar').length>0){
                         blink.theme.setTopByHeight('.navbar', '.casals_demo-navbar');
