@@ -1,4 +1,3 @@
-copia seguridad js
 
 (function (blink) {
 	'use strict';
