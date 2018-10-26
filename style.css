@@ -1413,9 +1413,7 @@ table td.bck-td {
 
 /*Desplegable 1*/
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-    background-color: transparent;
-}
+
 
 .bck-dropdown .casals_demo-dropdown {
     background-color: #FFF3C9;
