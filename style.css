@@ -1,4 +1,14 @@
+Casals_css
+
 /*General */
+
+
+/*archivo pdf*/
+.bck-file-attach span{
+overflow: initial;
+}
+
+
 .body_clase .content-wrapper {
 	padding-top: 130px;
 	padding-bottom: 0px;
@@ -93,13 +103,12 @@ input, button, select, textarea {
 	font-size: 1.8rem;
 }
 
-.content_type_clase_casals_demo #actividad .texto_curso li,
-.content_type_clase_casals_demo #actividad .workspace ul li li {
+.content_type_clase_casals_demo #actividad .texto_curso li, .content_type_clase_casals_demo #actividad .workspace ul li li {
 	margin-bottom: 10px;
+	margin-left: -10px;
 }
 
-.content_type_clase_casals_demo #actividad .texto_curso li:last-of-type,
-.content_type_clase_casals_demo #actividad .workspace ul li li:last-of-type {
+.content_type_clase_casals_demo #actividad .texto_curso li:last-of-type, .content_type_clase_casals_demo #actividad .workspace ul li li:last-of-type {
 	margin-bottom: 0px;
 }
 
@@ -538,13 +547,16 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 /**/
 
+
+
 /* CKEDITOR */
 #actividad .content img {
 	margin-top: 10px;
-	border: 2px solid #9665AB;
-    border-radius: 25px;
+	border: 0px solid #9665AB;
+    border-radius: 0px;
     border-bottom-right-radius: 0;
 }
+
 
 /*Evitar bordes en las lineas del matching*/
 #actividad .workspace.matching .img-relaciones img {
@@ -579,37 +591,99 @@ body.is_app .casals_demo-navbar.ocultar {
 	background-color: transparent;
 }
 
+/*titulos*/
+
 .bck-title1 {
-    color: #9665AB;
-    font-size: 2.4rem;
-    font-weight: bold;
 	position: relative;
+	color: #575656;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .bck-title2 {
-    color: #9665AB;
-    font-size: 2.1rem;
-    font-weight: bold;
-    border-bottom: 1px solid #9665AB;
-	position: relative;
+    color: #575656;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    font-family: sans-serif;
+    border-bottom: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px
 }
 
 .bck-title3 {
-    color: #FF8400;
-    font-size: 2.4rem;
+    color: #575656;
+    font-size: 1.8rem;
+    position: relative;
+    background-color: transparent;
+    text-align: left;
     font-weight: 600;
-    display: inline-block;
-	position: relative;
+    padding: 11px;
+    font-family: sans-serif;
+    left: -8px;
 }
 
+.bck-title4{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #178FCA;
+    font-family: sans-serif;
+}
+
+.bck-title5{
+	position: relative;
+	color: #575656;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.bck-title5:before{
+	
+}
+
+.bck-title6{
+	position: relative;
+	color: #575656;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.bck-title6:before{
+
+}
+
+.bck-title7{
+    color: #178FCA;
+    font-size: 2.5rem;
+    font-weight: 600;
+    background-color: #C4DDF5;
+    border-top: 1px solid #178FCA;
+    text-align: left;
+    border-left: 1px solid #178FCA;
+    font-family: sans-serif;
+    border-right: 1px solid #178FCA;
+    padding-left: 15px;
+    margin-bottom: -1px;
+}
+
+
+/*énfasis*/
 .bck-enfasis {
-    color: #9363A8;
+    color: #178FCA;
+    font-size: 2.3rem;
     font-weight: bold;
 }
 
 .bck-enfasis-naranja {
-	color: #ED7102;
+    color: #EA4F45;
+    font-size: 2.3rem;
+    font-weight: bold;
 }
+
+
 
 /*listas*/
 
@@ -617,114 +691,144 @@ body.is_app .casals_demo-navbar.ocultar {
 	list-style: none;
 }
 
-#actividad .content .texto_curso ul li:before,
-#actividad .content .workspace ul li ul li:before,
-#actividad .content .texto_curso .bck-ul li:before,
-#actividad .content .workspace ul li .bck-ul li:before {
+#actividad .content .texto_curso ul li:before, #actividad .content .workspace ul li ul li:before, #actividad .content .texto_curso .bck-ul li:before, #actividad .content .workspace ul li .bck-ul li:before {
 	content: "";
     position: absolute;
-	height: 6px;
-    width: 6px;
-    background-color: #9665AB;
-    margin-top: 12px;
+	height: 9px;
+    width: 9px;
+    background-color: #178FCA;
+    margin-top: 8px;
     margin-left: -15px;
 	margin-right: 7px;
 	margin-bottom: 2px;
 	border-radius: 50%;
 }
 
-#actividad .content .texto_curso  ul.bck-ul-2 li,
-#actividad .content .workspace ul li ul.bck-ul-2 li {
+#actividad .content .texto_curso  ul.bck-ul-2 li, #actividad .content .workspace ul li ul.bck-ul-2 li {
 	list-style: none;
 }
 
-#actividad .content .texto_curso .bck-ul-2 li:before,
-#actividad .content .workspace ul li .bck-ul-2 li:before {
-	content: "- ";
-	background: none;
+#actividad .content .texto_curso .bck-ul-2 li:before, #actividad .content .workspace ul li .bck-ul-2 li:before {
+    content: "";
     position: relative;
+    background: #eb6523;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #eb6523;
+    width: 7px;
+    height: 7px;
 }
 
-#actividad .content .texto_curso ul.bck-ul-3 li,
-#actividad .content .workspace ul li ul.bck-ul-3 li {
+#actividad .content .texto_curso ul.bck-ul-3 li, #actividad .content .workspace ul li ul.bck-ul-3 li {
 	list-style: none;
 	padding: 0;
 	margin-left: 15px;
 }
 
-#actividad .content .texto_curso ul.bck-ul-3 li:before,
-#actividad .content .workspace ul li ul.bck-ul-3 li:before {
-	content: "ï¡";
-	font-family: FontAwesome;
+#actividad .content .texto_curso ul.bck-ul-3 li:before, #actividad .content .workspace ul li ul.bck-ul-3 li:before {
+    content: " ";
 	display: inline-block;
-	margin: 0;
-	margin-left: -20px;
+	margin: 10px;
+	margin-left: -16px;
 	background-color: transparent;
-	color: #9665AB;
+	background: #333;
+	height: 7px;
+    width: 7px;
 }
 
-#actividad .content .texto_curso .bck-ol li,
-#actividad .content .workspace ul li .bck-ol li {
+#actividad .content .texto_curso .bck-ol li, #actividad .content .workspace ul li .bck-ol li {
     list-style-type: none;
     counter-increment: bck-li-counter 1;
     position: relative;
 }
 
-#actividad .content .texto_curso .bck-ol li:before,
-#actividad .content .workspace ul li .bck-ol li:before {
-	content: counter(bck-li-counter)'.-';
-	position: absolute;
-	left: -47px;
-	width: 38px;
-	text-align: right;
-	color: #9665AB;
+#actividad .content .texto_curso .bck-ol li:before, #actividad .content .workspace ul li .bck-ol li:before{
+    content: counter(bck-li-counter);
+    position: absolute;
+    left: -50px;
+    font-size: 2rem;
+    text-align: right;
+    top: 0;
+    color: #178FCA;
+    font-weight: 600;
+    font-family: sans-serif;
+    background-color: transparent;
 }
+
 
 /*lista 2*/
-#actividad .content .texto_curso .bck-ol-2,
-#actividad .content .workspace ul li .bck-ol-2 {
+#actividad .content .texto_curso .bck-ol-2, #actividad .content .workspace ul li .bck-ol-2 {
 	list-style-type: none;
-	 counter-reset: bck-li-counter;
+	counter-reset: bck-li-counter;
+	margin-left: -6px;
 }
 
 
-#actividad .content .texto_curso .bck-ol-2 li,
-#actividad .content .workspace ul li .bck-ol-2 li {
+#actividad .content .texto_curso .bck-ol-2 li, #actividad .content .workspace ul li .bck-ol-2 li {
 	counter-increment: bck-li-counter;
 	padding-left: 4px;
 	position: relative;
 	z-index: 0;
 }
 
-#actividad .content .texto_curso ol.bck-ol-2 li:before,
-#actividad .content .workspace ul li ol.bck-ol-2 li:before {
-	content: counter(bck-li-counter, upper-alpha)'.-';
-	color: #9665AB;
-	font-size: 2.3rem;
-    margin-left: -32px;
-    margin-top: -1px;
-    padding-right: 8px;
-    text-align: left;
+#actividad .content .texto_curso ol.bck-ol-2 li:before, #actividad .content .workspace ul li ol.bck-ol-2 li:before {
+    content: counter(bck-li-counter);
+    position: absolute;
+    left: -30px;
+    font-size: 2rem;
+    text-align: right;
+    margin-top: 0;
+    color: #EA4F45;
+    font-weight: 600;
+    font-family: sans-serif;
+    background-color: transparent;
+    padding-right: 10px;
+    text-align: right;
+    width: 60px;
 }
 
 /*lista 3*/
-#actividad .content .texto_curso .bck-ol-3,
-#actividad .content .workspace ul li .bck-ol-3 {
+#actividad .content .texto_curso .bck-ol-3, #actividad .content .workspace ul li .bck-ol-3 {
 	list-style-type: none;
 	counter-reset: bck-li-counter;
 }
 
 
-#actividad .content .texto_curso .bck-ol-3 li,
-#actividad .content .workspace ul li .bck-ol-3 li {
+#actividad .content .texto_curso .bck-ol-3 li, #actividad .content .workspace ul li .bck-ol-3 li {
 	counter-increment: bck-li-counter;
 	padding-left: 0px;
 	position: relative;
 	z-index: 0;
 }
 
-#actividad .content .texto_curso ol.bck-ol-3 li:before,
-#actividad .content .workspace ul li ol.bck-ol-3 li:before {
+#actividad .content .texto_curso ol.bck-ol-3 li:before, #actividad .content .workspace ul li ol.bck-ol-3 li:before {
+    content: counter(bck-li-counter);
+    color: #333333ed;
+    font-size: 1.9rem;
+    margin-left: -20px;
+    font-weight: 600;
+    margin-top: -1px;
+    font-family: sans-serif;
+    padding-right: 8px;
+    text-align: left;
+}
+
+/*lista 4*/
+
+#actividad .content .texto_curso .bck-ol-4, #actividad .content .workspace ul li .bck-ol-4 {
+	list-style-type: none;
+	counter-reset: bck-li-counter;
+}
+
+
+#actividad .content .texto_curso .bck-ol-4 li, #actividad .content .workspace ul li .bck-ol-4 li {
+	counter-increment: bck-li-counter;
+	padding-left: 0px;
+	position: relative;
+	z-index: 0;
+}
+
+#actividad .content .texto_curso ol.bck-ol-4 li:before, #actividad .content .workspace ul li ol.bck-ol-4 li:before {
     content: counter(bck-li-counter);
     color: #333333ed;
     font-size: 1.9rem;
@@ -741,6 +845,14 @@ body.is_app .casals_demo-navbar.ocultar {
 /**/
 
 /*Cajas*/
+
+.bck-box.actividades.center {
+    background: aliceblue;
+    padding-right: 50px;
+    border: 1px solid #178FCA;
+}
+
+
 .bck-box {
 	max-width: 100%;
 	margin-bottom: 20px;
@@ -775,6 +887,16 @@ body.is_app .casals_demo-navbar.ocultar {
 	padding-left: 50px;
 }
 
+
+.content_type_clase_casals_demo:not(.android) .bck-box.simple:before {
+    transform: none;
+    -ms-transform: skewY(0deg);
+    -webkit-transform: skewY(0deg);
+}
+
+
+/*caja ideas*/
+
 .bck-box.simple {
     background-color: #F2E7D1;
     border-radius: 20px;
@@ -783,50 +905,82 @@ body.is_app .casals_demo-navbar.ocultar {
     padding-right: 15px;
 }
 
-.bck-box.simple:after {
-    background: none;
+.bck-box.simple .bck-title:before {
+    content: " ";
+    padding: 30px;
+    position: relative;
+    background-image: url(/useruploads/r/a/97382326/activity_other_imported/icono_bombilla_123679.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -70px;
+    top: 46px;
+    z-index: 999;
 }
 
-.content_type_clase_casals_demo:not(.android) .bck-box.simple:before {
-    transform: none;
-    -ms-transform: skewY(0deg);
-    -webkit-transform: skewY(0deg);
-}
-
-.bck-box.simple:before {
-    background-color: #F2DBF2;
+.bck-box.simple .bck-content {
+    border: 1px solid #333;
     border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-top: 2px;
+    padding-left: 0;
+    padding: 23px;
 }
 
 .bck-box.simple .bck-title {
-    background-color: #FBA81C;
-    color: #fff;
+    background-color: transparent;
+    color: #EB6623;
     font-weight: bold;
     display: inline-block;
-    padding: 10px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
+    padding: 0px;
     width: 50%;
-    padding-left: 30px;
+    font-size: 2.2rem;
+    padding-left: 65px;
 }
 
+
+/*caja azul*/
+
 .bck-box.simple-2 {
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 10px;
-	text-align: left;
+    background: #BBD4F0;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 5px;
 }
 
 .bck-box.simple-2 > .bck-content {
 	padding: 10px 25px;
 }
 
+
+/*caja rosa*/
+
 .bck-box.simple-3 {
-	border: 3px solid #9665AB;
-	border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    background: #FBD6BC;
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
+
+.bck-box.simple-3 .bck-title:before {
+    content: " ";
+    background-size: contain;
+    padding: 28px;
+    left: -10px;
+    position: absolute;
+    background-image: url(/useruploads/r/a/97354366/activity_other_imported/icono_exclamacion.png);
+    background-repeat: no-repeat;
+}
+
+/*caja actividades*/
+
+
+.bck-box.simple-4 {
+    background: aliceblue;
+    padding-right: 50px;
+    border: 1px solid #178FCA;
+}
+
+
 
 /**/
 
@@ -1060,101 +1214,46 @@ body.is_app .casals_demo-navbar.ocultar {
 	width: 25px;
 }
 
-.item-container .icon-clase:before {
+.item-container .icon-CI:before {
 	background-image: url(icon_clase.png);
 }
 
-.item-container .icon-clase-rosa:before {
+.item-container .icon-CS:before {
 	background-image: url(icon_clase_rosa.png);
 }
 
-.item-container .icon-conversation:before {
+.item-container .icon-CT:before {
 	background-image: url(icon_conversation.png);
 }
 
-.item-container .icon-conversation-verde:before {
+.item-container .icon-CA:before {
 	background-image: url(icon_conversacion_verde.png);
 }
 
-.item-container .icon-conversation-azul:before {
+.item-container .icon-CC:before {
 	background-image: url(icon_conversacion_azul.png);
 }
 
-.item-container .icon-conversation-rosa:before {
+.item-container .icon-CD:before {
 	background-image: url(icon_conversacion_rosa.png);
 }
 
-.item-container .icon-tool:before {
+.item-container .icon-CL:before {
 	background-image: url(icon_herramienta.png);
 }
 
-.item-container .icon-tool-verde:before {
-	background-image: url(icon_herramienta_verde.png);
+.item-container .icon-video:before {
+	background-image: url(icon_herramienta.png);
+
 }
 
-.item-container .icon-tool-azul:before {
-	background-image: url(icon_herramienta_azul.png);
+.item-container .icon-mapa:before {
+	background-image: url(icon_herramienta.png);
+}
+.item-container .icon-enlace:before {
+	background-image: url(icon_herramienta.png);
 }
 
-.item-container .icon-tool-rosa:before {
-	background-image: url(icon_herramienta_rosa.png);
-}
-
-.item-container .icon-llave:before {
-	background-image: url(icon_llave.png);
-}
-
-.item-container .icon-raton:before {
-	background-image: url(icon_raton.png);
-}
-
-.item-container .icon-museo:before {
-	background-image: url(icon_museo.png);
-}
-
-.item-container .icon-talento:before {
-	background-image: url(icon_talento.png);
-}
-
-.item-container .icon-talento-2:before {
-	background-image: url(icon_talento-2.png);
-}
-
-.item-container .icon-talento-verde:before {
-	background-image: url(icon_talento_verde.png);
-}
-
-/**Iconos con nÃºmero**/
-.item-container .icono {
-	font-size: 2rem;
-	color: #fff;
-	background-color: #E30045;
-	border-radius: 20px;
-	border-bottom-right-radius: 0;
-	padding: 2px 5px 2px 10px;
-	margin-right: 5px;
-}
-
-.item-container .icono:after {
-	content: "";
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	display: inline-block;
-	vertical-align: middle;
-	height: 25px;
-	width: 25px;
-	margin-left: 4px;
-	margin-bottom: 4px;
-}
-
-.item-container .icono.ablink:after {
-	background-image: url(icon_ablink.png);
-}
-
-.item-container .icono.ascorm:after {
-	background-image: url(icon_ascorm.png);
-}
 
 /**/
 
@@ -1166,11 +1265,13 @@ body.is_app .casals_demo-navbar.ocultar {
 
 .bck-table td {
 	padding: 10px;
-	border-color: #ddd
+	border-color: transparent;
+    border-style: solid;
+    border-width: medium
 }
 
 table td.bck-td {
-	background-color: #CC99FF;
+	background-color: #FDE4D5;
 }
 
 /**/
@@ -1193,42 +1294,9 @@ table td.bck-td {
 
 /**/
 
-/* Seccion Actividades */
-#actividad .carousel-inner .actividades .item-container {
-	background-color: #FFF;
-	position: relative;
-	z-index: 0;
-}
 
-#actividad .carousel-inner .actividades .item-container:before {
-	content: '';
-	position: absolute;
-	display: inline-block;
-	border-top: 85px solid #F5821F;
-	border-left: 77px solid #F5821F;
-	border-right: 77px solid #F5821F;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom:0 ;
-	background-color: transparent;
-	z-index: -1;
+/*secciones*/
 
-}
-
-/* CKEDITOR */
-.actividades .bck-title1 {
-	color: #F5821F;
-	position: relative;
-	font-weight: bold;
-	font-size: 2.8rem;
-}
-
-.actividades .bck-title1:before {
-	background-color: transparent;
-}
-
-/**/
 
 /* Seccion primera */
 #actividad .carousel-inner .primera {
@@ -1313,26 +1381,42 @@ table td.bck-td {
 	border-top-right-radius: 20px;
 }
 
-.casals_demo-dropdown .bck-dropdown-icon, .casals_demo-dropdown-2 .bck-dropdown-icon {
-	color: white;
+.bck-dropdown.casals_demo-dropdown {
+    background-color: #FFF3C9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
 }
 
-.casals_demo-dropdown .bck-dropdown-icon > .fa, .casals_demo-dropdown-2 .bck-dropdown-icon > .fa {
+.casals_demo-dropdown .bck-dropdown-icon {
+    background-color: #FFF3C9;
+    width: 10px;
+    height: 10px;
+    margin: 10px 10px;
+    display: inline-block;
+    position: absolute;
+}
+
+.casals_demo-dropdown .bck-dropdown-icon > .fa {
     border: 0px solid white;
     color: #333;
     margin-top: 10px;
     padding: 0px;
 }
 
-.casals_demo-dropdown .bck-dropdown-titulo, .casals_demo-dropdown-2 .bck-dropdown-titulo{
+.casals_demo-dropdown .bck-dropdown-titulo {
     color: #000;
     font-size: 1.9rem;
     margin-left: 31px;
     display: inline-block;
-    text-align: left
+    text-align: left;
 }
 
 /*Desplegable 1*/
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: transparent;
+}
+
 .bck-dropdown .casals_demo-dropdown {
     background-color: #FFF3C9;
     border-top-left-radius: 20px;
