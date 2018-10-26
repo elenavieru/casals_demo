@@ -1,5 +1,3 @@
-copia seguridad js
-
 (function (blink) {
 	'use strict';
 
@@ -9,8 +7,6 @@ copia seguridad js
 		page = blink.currentPage;
 
 	casals_demoStyle.prototype = {
-		//BK-15873 aÃ±adimos el estilo basic como parent para la herencia de los estilos del CKEditor
-		parent: blink.theme.styles.basic.prototype,
 		bodyClassName: 'content_type_clase_casals_demo',
 		ckEditorStyles: {
 			name: 'casals_demo',
@@ -25,8 +21,6 @@ copia seguridad js
 
 				{ name: 'Enfasis azul', element: 'span', attributes: { 'class': 'bck-enfasis'} },
 				{ name: 'Enfasis rosa', element: 'span', attributes: { 'class': 'bck-enfasis-naranja'} },
-				
-				//BK-15873 Quitamos el estilo versalitas, ya que lo hereda de basic
 
 				{ name: 'Lista Desordenada azul', element: 'ul', attributes: { 'class': 'bck-ul'} },
 				{ name: 'Lista Desordenada naranja', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
@@ -56,17 +50,15 @@ copia seguridad js
 				{ name: 'Icono Video', element: 'span', attributes: { 'class': 'icon icon-video' } },
 				{ name: 'Icono Mapa', element: 'span', attributes: { 'class': 'icon icon-mapa' } },
 				{ name: 'Icono Enlace', element: 'span', attributes: { 'class': 'icon icon-enlace' } }
-				
 			]
 		},
+
 		slidesTitle: {},
 
 		init: function () {
-			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.init.call(this);
+			var parent = blink.theme.styles.basic.prototype;
+			parent.init.call(this);
 			this.addActivityTitle();
-			if(window.esWeb) return;
-			this.removeFinalSlide();
 			this.fillSlidesTitle();
 			this.formatCarouselindicators();
 			this.animateNavbarOnScroll();
@@ -74,8 +66,8 @@ copia seguridad js
 		},
 
 		removeFinalSlide: function () {
-			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.removeFinalSlide.call(this, true);
+			var parent = blink.theme.styles.basic.prototype;
+			parent.removeFinalSlide.call(this, true);
 		},
 
 		configEditor: function (editor) {
@@ -178,14 +170,13 @@ copia seguridad js
 						'<ul class="dropdown-menu" role="menu" aria-labelledby="tLabel">';
 
 				for (var i in units) {
-					var title = units[i].title,
-					    idTema = units[i].id;
-					if (title && units[i].subunits.length) { //Si el tema tiene actividades
+					var title = units[i].title;
+					if (title && units[i].subunits.length) { 
 						dropDownTemas += '' +
 							'<li role="presentation" class="lista-temas" data-url="' + units[i].subunits[0].url + '">' +
 								'<span>'+ units[i].number + '</span><a role="menuitem">' + title + '</a>' +
 							'</li>'
-						if (idTema == blink.courseInfo.IDUnit) number = units[i].number;
+						if (title == blink.courseInfo.unit) number = units[i].number;
 					}
 				}
 
@@ -236,9 +227,8 @@ copia seguridad js
 
 			$leftControl.add($rightControl).find('span').remove();
 
-			var slideIndex = 0; // se utiliza como indice para saltarnos los concatenados en el each
+			var slideIndex = 0;
 			var slidesNav = $('.item-container');
-			// Filtramos para que solo coja las slides que no son final slide para iterar sobre ellas
 			slidesNav = slidesNav.filter(function(element){
 				if ($(slidesNav[element]).find('#final').length > 0) {
 					return false;
@@ -297,7 +287,9 @@ copia seguridad js
 				});
 		},
 
-		//BK-15873 Quitamos la funcion getEditorStyles para que la herede de basic
+		getEditorStyles: function () {
+			return this.ckEditorStyles;
+		},
 
 		animateNavbarOnScroll: function () {
 			if (!blink.isApp) return;
@@ -309,7 +301,7 @@ copia seguridad js
 				lastScrollTop = scrollTop;
 			});
 		},
-
+                
                 changeHighBar: function () {
                     if($('.casals_demo-navbar').length>0 && $('.navbar').length>0){
                         blink.theme.setTopByHeight('.navbar', '.casals_demo-navbar');
