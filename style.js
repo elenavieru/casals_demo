@@ -1,4 +1,3 @@
-
 (function (blink) {
 	'use strict';
 
@@ -8,28 +7,23 @@
 		page = blink.currentPage;
 
 	casals_demoStyle.prototype = {
-		//BK-15873 aÃ±adimos el estilo basic como parent para la herencia de los estilos del CKEditor
-		parent: blink.theme.styles.basic.prototype,
 		bodyClassName: 'content_type_clase_casals_demo',
 		ckEditorStyles: {
 			name: 'casals_demo',
 			styles: [
-				{ name: 'Titulo 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
-				{ name: 'Titulo 2', element: 'h3', attributes: { 'class': 'bck-title2'} },
-				{ name: 'Titulo 3', element: 'h3', attributes: { 'class': 'bck-title3'} },
+				{ name: 'Título 1', element: 'h2', attributes: { 'class': 'bck-title1'} },
+				{ name: 'Título 2', element: 'h3', attributes: { 'class': 'bck-title2'} },
+				{ name: 'Título 3', element: 'h3', attributes: { 'class': 'bck-title3'} },
 
-				{ name: 'Enfasis', element: 'span', attributes: { 'class': 'bck-enfasis'} },
-				{ name: 'Enfasis Naranja', element: 'span', attributes: { 'class': 'bck-enfasis-naranja'} },
-				
-				//BK-15873 Quitamos el estilo versalitas, ya que lo hereda de basic
+				{ name: 'Énfasis', element: 'span', attributes: { 'class': 'bck-enfasis'} },
+				{ name: 'Énfasis Naranja', element: 'span', attributes: { 'class': 'bck-enfasis-naranja'} },
+				{ name: 'Versalitas', element: 'span', attributes: { 'class': 'bck-versalitas'} },
 
-				{ name: 'Lista Desordenada 1', element: 'ul', attributes: { 'class': 'bck-ul'} },
+				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
 				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
 				{ name: 'Lista Desordenada 3', element: 'ul', attributes: { 'class': 'bck-ul-3'} },
 				{ name: 'Lista Ordenada', element: 'ol', attributes: { 'class': 'bck-ol' } },
 				{ name: 'Lista Ordenada 2', element: 'ol', attributes: { 'class': 'bck-ol-2' } },
-				{ name: 'Lista Ordenada 3', element: 'ol', attributes: { 'class': 'bck-ol-3' } },
-				{ name: 'Lista Ordenada 4', element: 'ol', attributes: { 'class': 'bck-ol-4' } },
 
 				{ name: 'Caja simple', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple' } },
 				{ name: 'Caja simple 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'simple-2' } },
@@ -38,25 +32,25 @@
 				{ name: 'Tabla', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table'} },
 				{ name: 'Celda', element: 'td', attributes: { 'class': 'bck-td'} },
 
-				{ name: 'PresentaciÃ³n', element: 'h4', attributes: { 'class': 'presentation'} },
-				{ name: 'PresentaciÃ³n 2', element: 'h4', attributes: { 'class': 'presentation-2'} },
-				{ name: 'TÃ­tulo PresentaciÃ³n Video', element: 'h4', attributes: { 'class': 'titulo-video'} },
-				{ name: 'TÃ­tulo PresentaciÃ³n Video 2', element: 'h4', attributes: { 'class': 'titulo-video-2'} },
+				{ name: 'Presentación', element: 'h4', attributes: { 'class': 'presentation'} },
+				{ name: 'Presentación 2', element: 'h4', attributes: { 'class': 'presentation-2'} },
+				{ name: 'Título Presentación Video', element: 'h4', attributes: { 'class': 'titulo-video'} },
+				{ name: 'Título Presentación Video 2', element: 'h4', attributes: { 'class': 'titulo-video-2'} },
 				{ name: 'Actividad Scorm', element: 'h4', attributes: { 'class': 'actividad-scorm'} },
 				{ name: 'Actividad Blink', element: 'h4', attributes: { 'class': 'actividad-blink'} },
-				{ name: 'TÃ­tulo Slider ImÃ¡gen', element: 'h4', attributes: { 'class': 'slider-imagen'} },
-				{ name: 'TÃ­tulo Trabajar ImÃ¡gen', element: 'h4', attributes: { 'class': 'trabajar-imagen'} },
-				{ name: 'TÃ­tulo Escuchar', element: 'h4', attributes: { 'class': 'titulo-escuchar'} },
+				{ name: 'Título Slider Imágen', element: 'h4', attributes: { 'class': 'slider-imagen'} },
+				{ name: 'Título Trabajar Imágen', element: 'h4', attributes: { 'class': 'trabajar-imagen'} },
+				{ name: 'Título Escuchar', element: 'h4', attributes: { 'class': 'titulo-escuchar'} },
 
-				{ name: 'TÃ­tulo2 Hablar', element: 'h4', attributes: { 'class': 'titulo-2 hablar'} },
-				{ name: 'TÃ­tulo2 Escuchar', element: 'h4', attributes: { 'class': 'titulo-2 escuchar'} },
-				{ name: 'TÃ­tulo2 Leer', element: 'h4', attributes: { 'class': 'titulo-2 leer'} },
-				{ name: 'TÃ­tulo2 Escribir', element: 'h4', attributes: { 'class': 'titulo-2 escribir'} },
-				{ name: 'TÃ­tulo2 Aprender', element: 'h4', attributes: { 'class': 'titulo-2 aprender'} },
+				{ name: 'Título2 Hablar', element: 'h4', attributes: { 'class': 'titulo-2 hablar'} },
+				{ name: 'Título2 Escuchar', element: 'h4', attributes: { 'class': 'titulo-2 escuchar'} },
+				{ name: 'Título2 Leer', element: 'h4', attributes: { 'class': 'titulo-2 leer'} },
+				{ name: 'Título2 Escribir', element: 'h4', attributes: { 'class': 'titulo-2 escribir'} },
+				{ name: 'Título2 Aprender', element: 'h4', attributes: { 'class': 'titulo-2 aprender'} },
 
-				{ name: 'PresentaciÃ³n Imagen', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-img' } },
-				{ name: 'PresentaciÃ³n Video', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-video' } },
-				{ name: 'PresentaciÃ³n Video 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-video-2' } },
+				{ name: 'Presentación Imagen', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-img' } },
+				{ name: 'Presentación Video', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-video' } },
+				{ name: 'Presentación Video 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'presentation-video-2' } },
 				{ name: 'Slider Imagen', type: 'widget', widget: 'blink_box', attributes: { 'class': 'slider-img' } },
 				{ name: 'Trabajar Imagen', type: 'widget', widget: 'blink_box', attributes: { 'class': 'trabajar-img' } },
 				{ name: 'Escuchar', type: 'widget', widget: 'blink_box', attributes: { 'class': 'escuchar-box' } },
@@ -71,16 +65,16 @@
 
 				{ name: 'Icono Clase', element: 'span', attributes: { 'class': 'icon icon-clase' } },
 				{ name: 'Icono Clase Rosa', element: 'span', attributes: { 'class': 'icon icon-clase-rosa' } },
-				{ name: 'Icono ConversaciÃ³n', element: 'span', attributes: { 'class': 'icon icon-conversation' } },
-				{ name: 'Icono ConversaciÃ³n Verde', element: 'span', attributes: { 'class': 'icon icon-conversation-verde' } },
-				{ name: 'Icono ConversaciÃ³n Azul', element: 'span', attributes: { 'class': 'icon icon-conversation-azul' } },
-				{ name: 'Icono ConversaciÃ³n Rosa', element: 'span', attributes: { 'class': 'icon icon-conversation-rosa' } },
+				{ name: 'Icono Conversación', element: 'span', attributes: { 'class': 'icon icon-conversation' } },
+				{ name: 'Icono Conversación Verde', element: 'span', attributes: { 'class': 'icon icon-conversation-verde' } },
+				{ name: 'Icono Conversación Azul', element: 'span', attributes: { 'class': 'icon icon-conversation-azul' } },
+				{ name: 'Icono Conversación Rosa', element: 'span', attributes: { 'class': 'icon icon-conversation-rosa' } },
 				{ name: 'Icono Herramienta', element: 'span', attributes: { 'class': 'icon icon-tool' } },
 				{ name: 'Icono Herramienta Verde', element: 'span', attributes: { 'class': 'icon icon-tool-verde' } },
 				{ name: 'Icono Herramienta Azul', element: 'span', attributes: { 'class': 'icon icon-tool-azul' } },
 				{ name: 'Icono Herramienta Rosa', element: 'span', attributes: { 'class': 'icon icon-tool-rosa' } },
 				{ name: 'Icono Llave', element: 'span', attributes: { 'class': 'icon icon-llave' } },
-				{ name: 'Icono RatÃ³n', element: 'span', attributes: { 'class': 'icon icon-raton' } },
+				{ name: 'Icono Ratón', element: 'span', attributes: { 'class': 'icon icon-raton' } },
 				{ name: 'Icono Museo', element: 'span', attributes: { 'class': 'icon icon-museo' } },
 				{ name: 'Icono Talento', element: 'span', attributes: { 'class': 'icon icon-talento' } },
 				{ name: 'Icono Talento 2', element: 'span', attributes: { 'class': 'icon icon-talento-2' } },
@@ -93,11 +87,9 @@
 		slidesTitle: {},
 
 		init: function () {
-			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.init.call(this);
+			var parent = blink.theme.styles.basic.prototype;
+			parent.init.call(this);
 			this.addActivityTitle();
-			if(window.esWeb) return;
-			this.removeFinalSlide();
 			this.fillSlidesTitle();
 			this.formatCarouselindicators();
 			this.animateNavbarOnScroll();
@@ -105,8 +97,8 @@
 		},
 
 		removeFinalSlide: function () {
-			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.removeFinalSlide.call(this, true);
+			var parent = blink.theme.styles.basic.prototype;
+			parent.removeFinalSlide.call(this, true);
 		},
 
 		configEditor: function (editor) {
@@ -209,14 +201,13 @@
 						'<ul class="dropdown-menu" role="menu" aria-labelledby="tLabel">';
 
 				for (var i in units) {
-					var title = units[i].title,
-					    idTema = units[i].id;
+					var title = units[i].title;
 					if (title && units[i].subunits.length) { //Si el tema tiene actividades
 						dropDownTemas += '' +
 							'<li role="presentation" class="lista-temas" data-url="' + units[i].subunits[0].url + '">' +
 								'<span>'+ units[i].number + '</span><a role="menuitem">' + title + '</a>' +
 							'</li>'
-						if (idTema == blink.courseInfo.IDUnit) number = units[i].number;
+						if (title == blink.courseInfo.unit) number = units[i].number;
 					}
 				}
 
@@ -328,7 +319,9 @@
 				});
 		},
 
-		//BK-15873 Quitamos la funcion getEditorStyles para que la herede de basic
+		getEditorStyles: function () {
+			return this.ckEditorStyles;
+		},
 
 		animateNavbarOnScroll: function () {
 			if (!blink.isApp) return;
@@ -340,7 +333,7 @@
 				lastScrollTop = scrollTop;
 			});
 		},
-
+                
                 changeHighBar: function () {
                     if($('.casals_demo-navbar').length>0 && $('.navbar').length>0){
                         blink.theme.setTopByHeight('.navbar', '.casals_demo-navbar');
