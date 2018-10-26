@@ -55,7 +55,7 @@ casals_js
 				{ name: 'Icono CL', element: 'span', attributes: { 'class': 'icon icon-CL' } },
 				{ name: 'Icono Video', element: 'span', attributes: { 'class': 'icon icon-video' } },
 				{ name: 'Icono Mapa', element: 'span', attributes: { 'class': 'icon icon-mapa' } },
-				{ name: 'Icono Enlace', element: 'span', attributes: { 'class': 'icon icon-enlace' } },
+				{ name: 'Icono Enlace', element: 'span', attributes: { 'class': 'icon icon-enlace' } }
 
 			]
 		},
