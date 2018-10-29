@@ -666,7 +666,7 @@ body.is_app .casals_demo-navbar.ocultar {
     border-left: 1px solid #178FCA;
     font-family: sans-serif;
     border-right: 1px solid #178FCA;
-    padding-left: 15px;
+    padding: 12px;
     margin-bottom: -1px;
 }
 
