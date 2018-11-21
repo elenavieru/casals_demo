@@ -985,38 +985,6 @@ body.is_app .casals_demo-navbar.ocultar {
     border: 1px solid #178FCA;
 }
 
-/*iconos*/
-
-.item-container .icon:before {
-	content: "";
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-	background-position: center center;
-	display: inline-block;
-	vertical-align: middle;
-    height: 38px;
-    width: 40px;
-}
-
-.item-container .icon-CI:before {
-	background-image: url(imagenes/icon_CI.png);
-}
-
-.item-container .icon-CS:before {
-	background-image: url(icon_presentacion-2.png);
-}
-
-.item-container .icon-CT:before {
-	background-image: url(icon_presentacionvideo.png);
-}
-
-.item-container .icon-CL:before {
-	background-image: url(imagenes/icon_CL.png);
-}
-
 
 
 /**ImÃ¡genes-Enlaces**/
@@ -1107,12 +1075,12 @@ body.is_app .casals_demo-navbar.ocultar {
 	background-position: center center;
 	display: inline-block;
 	vertical-align: middle;
-	height: 25px;
-	width: 25px;
+	height: 30px;
+	width: 30px;
 }
 
 .item-container .icon-CI:before {
-	background-image: url(icon_clase.png);
+	background-image: url(imagenes/icon_CI.png);
 }
 
 .item-container .icon-CS:before {
@@ -1136,7 +1104,7 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 
 .item-container .icon-CL:before {
-	background-image: url(icon_herramienta.png);
+	background-image: url(imagenes/icon_CL.png);
 }
 
 .item-container .icon-video:before {
