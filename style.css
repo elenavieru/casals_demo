@@ -744,10 +744,10 @@ body.is_app .casals_demo-navbar.ocultar {
 #actividad .content .texto_curso .bck-ol li:before, #actividad .content .workspace ul li .bck-ol li:before{
     content: counter(bck-li-counter);
     position: absolute;
-    left: -50px;
+    left: -22px;
     font-size: 2rem;
     text-align: right;
-    top: 0;
+    top: 1px;
     color: #178FCA;
     font-weight: 600;
     font-family: sans-serif;
