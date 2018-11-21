@@ -824,6 +824,7 @@ body.is_app .casals_demo-navbar.ocultar {
 #actividad .content .texto_curso .bck-ol-4, #actividad .content .workspace ul li .bck-ol-4 {
 	list-style-type: none;
 	counter-reset: bck-li-counter;
+	margin-left: 15px;
 }
 
 
@@ -835,14 +836,14 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 
 #actividad .content .texto_curso ol.bck-ol-4 li:before, #actividad .content .workspace ul li ol.bck-ol-4 li:before {
-    content: counter(bck-li-counter);
+    content: counter(bck-li-counter, lower-alpha);
     color: #333333ed;
-    font-size: 1.9rem;
-    margin-left: -20px;
+    font-size: 1.7rem;
+    margin-left: -18px;
     font-weight: 600;
     margin-top: -1px;
     font-family: sans-serif;
-    padding-right: 8px;
+    padding-right: 9px;
     text-align: left;
 }
 
