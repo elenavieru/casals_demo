@@ -985,45 +985,18 @@ body.is_app .casals_demo-navbar.ocultar {
     border: 1px solid #178FCA;
 }
 
-
-
-/**/
-
-/*ENLACES*/
-
-/**TÃ­tulos**/
-
-/**1**/
-.presentation, .presentation-2, .titulo-video, .titulo-video-2, .actividad-scorm,
-.actividad-blink, .slider-imagen, .trabajar-imagen, .titulo-escuchar {
-	color: #6B6B6B;
-    font-size: 1.9rem;
-    font-weight: bold;
-	background-color: #EEE;
-	border-top: 2px solid #ddd;
-	border-bottom: 2px solid #ddd;
-	display: block;
-	width: 100%;
-	margin: 10px auto;
-	margin-left: 0;
-	padding: 10px;
-    padding-left: 0px;
-	text-align: left;
-	line-height: 2.4rem;
-}
+/*iconos*/
 
 .icon-CI:before, .icon-CS:before, .icon-CT:before, .icon-CA:before, .icon-CC:before,
 .icon-CD:before, .icon-CL:before {
 	content: '';
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
 	display: inline-block;
 	height: 30px;
 	width: 30px;
 	margin: 10px 20px;
 	margin-top: -2px;
-	float: left;
 }
 
 .icon-CI:before {
@@ -1062,69 +1035,7 @@ body.is_app .casals_demo-navbar.ocultar {
 	background-image: url(icon_escuchar.png);
 }
 
-/**2**/
 
-.titulo-2 {
-	position: relative;
-	border-bottom-style: solid;
-	border-width: 1px;
-	font-weight: bold;
-	color: black;
-	line-height: 4.0rem;
-	padding-left: 40px;
-}
-
-.titulo-2:before {
-	content: '';
-	position: absolute;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	top: 5px;
-	left: 0px;
-}
-
-.titulo-2.hablar {
-	border-color: #FF020B;
-}
-
-.titulo-2.hablar:before {
-	background-image: url(titulo2_hablar_icon.png);
-}
-
-.titulo-2.escuchar {
-	border-color: #006EBC;
-}
-
-.titulo-2.escuchar:before {
-	background-image: url(titulo2_escuchar_icon.png);
-}
-
-.titulo-2.leer {
-	border-color: #009A92;
-}
-
-.titulo-2.leer:before {
-	background-image: url(titulo2_leer_icon.png);
-}
-
-.titulo-2.escribir {
-	border-color: #991986;
-}
-
-.titulo-2.escribir:before {
-	background-image: url(titulo2_escribir_icon.png);
-}
-
-.titulo-2.aprender {
-	border-color: #FF8500;
-}
-
-.titulo-2.aprender:before {
-	background-image: url(titulo2_aprender_icon.png);
-}
 
 
 /**ImÃ¡genes-Enlaces**/
