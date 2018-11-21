@@ -1,8 +1,6 @@
-css_29oct_casals
-Casals_css
+/*casals_css21/11*/
 
 /*General */
-
 
 /*archivo pdf*/
 .bck-file-attach span{
@@ -777,15 +775,13 @@ body.is_app .casals_demo-navbar.ocultar {
     position: absolute;
     left: -30px;
     font-size: 2rem;
-    text-align: right;
-    margin-top: 0;
+    margin-top: 1px;
     color: #EA4F45;
     font-weight: 600;
     font-family: sans-serif;
     background-color: transparent;
-    padding-right: 10px;
     text-align: right;
-    width: 60px;
+    width: 25px;
 }
 
 /*lista 3*/
