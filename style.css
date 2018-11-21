@@ -987,54 +987,35 @@ body.is_app .casals_demo-navbar.ocultar {
 
 /*iconos*/
 
-.icon-CI:before, .icon-CS:before, .icon-CT:before, .icon-CA:before, .icon-CC:before,
-.icon-CD:before, .icon-CL:before {
-	content: '';
+.item-container .icon:before {
+	content: "";
 	background-repeat: no-repeat;
-	background-size: cover;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: center center;
 	display: inline-block;
-	height: 30px;
-	width: 30px;
-	margin: 10px 20px;
-	margin-top: -2px;
+	vertical-align: middle;
+    height: 38px;
+    width: 40px;
 }
 
-.icon-CI:before {
+.item-container .icon-CI:before {
 	background-image: url(imagenes/icon_CI.png);
 }
 
-.icon-CS:before {
+.item-container .icon-CS:before {
 	background-image: url(icon_presentacion-2.png);
 }
 
-.icon-CT:before {
+.item-container .icon-CT:before {
 	background-image: url(icon_presentacionvideo.png);
 }
 
-.icon-CL:before {
+.item-container .icon-CL:before {
 	background-image: url(imagenes/icon_CL.png);
 }
-
-.actividad-scorm:before {
-	background-image: url(icon_actividadscorm.png);
-}
-
-.actividad-blink:before {
-	background-image: url(icon_actividadblink.png);
-}
-
-.slider-imagen:before {
-	background-image: url(icon_sliderimagen.png);
-}
-
-.trabajar-imagen:before {
-	background-image: url(icon_trabajar_imagen.png);
-}
-
-.titulo-escuchar:before {
-	background-image: url(icon_escuchar.png);
-}
-
 
 
 
