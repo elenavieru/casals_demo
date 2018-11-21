@@ -1083,27 +1083,31 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 
 .item-container .icon-CS:before {
-	background-image: url(icon_clase_rosa.png);
+	background-image: url(imagenes/icon_CS.png);
 }
 
 .item-container .icon-CT:before {
-	background-image: url(icon_conversation.png);
+	background-image: url(imagenes/icon_CT.png);
 }
 
 .item-container .icon-CA:before {
-	background-image: url(icon_conversacion_verde.png);
+	background-image: url(imagenes/icon_CA.png);
 }
 
 .item-container .icon-CC:before {
-	background-image: url(icon_conversacion_azul.png);
+	background-image: url(imagenes/icon_CC.png);
 }
 
 .item-container .icon-CD:before {
-	background-image: url(icon_conversacion_rosa.png);
+	background-image: url(imagenes/icon_CD.png);
 }
 
 .item-container .icon-CL:before {
 	background-image: url(imagenes/icon_CL.png);
+}
+
+.item-container .icon-CM:before {
+	background-image: url(imagenes/icon_CM.png);
 }
 
 .item-container .icon-video:before {
