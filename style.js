@@ -1,3 +1,4 @@
+/*casals_js*/
 (function (blink) {
 	'use strict';
 
@@ -47,6 +48,7 @@
 				{ name: 'Icono CC', element: 'span', attributes: { 'class': 'icon icon-CC' } },
 				{ name: 'Icono CD', element: 'span', attributes: { 'class': 'icon icon-CD' } },
 				{ name: 'Icono CL', element: 'span', attributes: { 'class': 'icon icon-CL' } },
+				{ name: 'Icono CM', element: 'span', attributes: { 'class': 'icon icon-CM' } },
 				{ name: 'Icono Video', element: 'span', attributes: { 'class': 'icon icon-video' } },
 				{ name: 'Icono Mapa', element: 'span', attributes: { 'class': 'icon icon-mapa' } },
 				{ name: 'Icono Enlace', element: 'span', attributes: { 'class': 'icon icon-enlace' } }
