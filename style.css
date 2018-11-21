@@ -744,7 +744,7 @@ body.is_app .casals_demo-navbar.ocultar {
 #actividad .content .texto_curso .bck-ol li:before, #actividad .content .workspace ul li .bck-ol li:before{
     content: counter(bck-li-counter);
     position: absolute;
-    left: -22px;
+    left: -30px;
     font-size: 2rem;
     text-align: right;
     top: 1px;
@@ -752,6 +752,7 @@ body.is_app .casals_demo-navbar.ocultar {
     font-weight: 600;
     font-family: sans-serif;
     background-color: transparent;
+    width: 23px;
 }
 
 
