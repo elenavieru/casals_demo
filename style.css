@@ -661,6 +661,7 @@ body.is_app .casals_demo-navbar.ocultar {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 .bck-title7{
     color: #178FCA;
     font-size: 2.5rem;
@@ -1011,8 +1012,8 @@ body.is_app .casals_demo-navbar.ocultar {
 	line-height: 2.4rem;
 }
 
-.presentation:before, .presentation-2:before, .titulo-video:before, .titulo-video-2:before, .actividad-scorm:before,
-.actividad-blink:before, .slider-imagen:before, .trabajar-imagen:before, .titulo-escuchar:before {
+.icon-CI:before, .icon-CS:before, .icon-CT:before, .icon-CA:before, .icon-CC:before,
+.icon-CD:before, .icon-CL:before {
 	content: '';
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1025,20 +1026,20 @@ body.is_app .casals_demo-navbar.ocultar {
 	float: left;
 }
 
-.presentation:before {
-	background-image: url(icon_presentacion.png);
+.icon-CI:before {
+	background-image: url(imagenes/icon_CI.png);
 }
 
-.presentation-2:before {
+.icon-CS:before {
 	background-image: url(icon_presentacion-2.png);
 }
 
-.titulo-video:before {
+.icon-CT:before {
 	background-image: url(icon_presentacionvideo.png);
 }
 
-.titulo-video-2:before {
-	background-image: url(icon_presentacionvideo-2.png);
+.icon-CL:before {
+	background-image: url(imagenes/icon_CL.png);
 }
 
 .actividad-scorm:before {
