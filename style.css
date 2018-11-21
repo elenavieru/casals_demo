@@ -1072,11 +1072,10 @@ body.is_app .casals_demo-navbar.ocultar {
 	content: "";
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
 	display: inline-block;
 	vertical-align: middle;
-	height: 30px;
-	width: 30px;
+	height: 31px;
+	width: 333px;
 }
 
 .item-container .icon-CI:before {
