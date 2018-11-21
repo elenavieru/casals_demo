@@ -638,8 +638,12 @@ body.is_app .casals_demo-navbar.ocultar {
     font-weight: bold;
 }
 
-.bck-title5:before{
-	
+.bck-title5:before {
+    content: " ";
+    padding: 10px 35px;
+    background-image: url(imagenes/icono_tiempo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .bck-title6{
