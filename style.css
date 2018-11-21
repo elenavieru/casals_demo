@@ -654,10 +654,13 @@ body.is_app .casals_demo-navbar.ocultar {
     font-weight: bold;
 }
 
-.bck-title6:before{
-
+.bck-title6:before {
+    content: " ";
+    padding: 10px 35px;
+    background-image: url(imagenes/img_libro.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-
 .bck-title7{
     color: #178FCA;
     font-size: 2.5rem;
