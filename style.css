@@ -588,6 +588,7 @@ body.is_app .casals_demo-navbar.ocultar {
 	background-size: 100%;
 	background-position: 0;
 	background-color: transparent;
+	width: 34px;
 }
 
 /*titulos*/
