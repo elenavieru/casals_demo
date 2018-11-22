@@ -584,7 +584,7 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 
 #actividad .player.audio {
-	background-image: url(audio_icon.png);
+	background-image: url(imagenes/icono_audio.png);
 	background-size: 100%;
 	background-position: 0;
 	background-color: transparent;
