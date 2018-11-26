@@ -811,13 +811,14 @@ body.is_app .casals_demo-navbar.ocultar {
 #actividad .content .texto_curso ol.bck-ol-3 li:before, #actividad .content .workspace ul li ol.bck-ol-3 li:before {
     content: counter(bck-li-counter);
     color: #333333ed;
+    position: absolute;
     font-size: 1.9rem;
-    margin-left: -20px;
+    left: -30px;
     font-weight: 600;
-    margin-top: -1px;
+    top: -1px;
     font-family: sans-serif;
-    padding-right: 8px;
-    text-align: left;
+    text-align: right;
+    width: 22px;
 }
 
 /*lista 4*/
