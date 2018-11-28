@@ -59,7 +59,6 @@ a:hover, a:active, a:focus {
 
 
 
-
 /*General */
 
 /*archivo pdf*/
@@ -256,12 +255,6 @@ fieldset[disabled] .content_type_clase_casals_demo .slide_main input {
     border-radius: 20px;
 }
 
-#indice .unit-content .header {
-	border: 2px solid #9665AB;
-    border-radius: 20px;
-    border-bottom-right-radius: 0px;
-}
-
 #indice .unit-content .header.default {
 	background-image: url(../../../images/libro/transparente.png) ! important;
 	background-color: #7aac39;
@@ -275,12 +268,6 @@ fieldset[disabled] .content_type_clase_casals_demo .slide_main input {
 
 #indice .units ul li {
 	background: #cbcbcb;
-}
-
-#indice .units ul li.active:not(.disabled),
-body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
-#indice .units ul li:focus:not(.disabled) {
-	background: #9665AB;
 }
 
 #indice .units ul li:not(.add) a .title {
@@ -611,7 +598,6 @@ body.is_app .casals_demo-navbar.ocultar {
 /* CKEDITOR */
 #actividad .content img {
 	margin-top: 10px;
-	border: 0px solid #9665AB;
     border-radius: 0px;
     border-bottom-right-radius: 0;
 }
@@ -1221,11 +1207,6 @@ table td.bck-td {
 .cke_reset {
     background: white;
 }
-
-.btn-primary, .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
-    background-color: #9665AB;
-}
-
 /**/
 
 
