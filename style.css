@@ -12,7 +12,7 @@
 }
 
 #indice .units ul li {
-    background: #A9DDF5;
+    background: #cbcbcb;
     border-radius: 0px;
     height: auto;
     margin-bottom: 2px;
@@ -260,10 +260,6 @@ fieldset[disabled] .content_type_clase_casals_demo .slide_main input {
 	width: 0px;
 	visibility: hidden;
 	margin: 0px;
-}
-
-#indice .units ul li {
-	background: #cbcbcb;
 }
 
 #indice .units ul li:not(.add) a .title {
