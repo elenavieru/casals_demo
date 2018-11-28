@@ -1114,15 +1114,14 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 
 .item-container .icon-video:before {
-	background-image: url(icon_herramienta.png);
-
+	background-image: url(imagenes/Icon_video.png);
 }
 
 .item-container .icon-mapa:before {
-	background-image: url(icon_herramienta.png);
+	background-image: url(imagenes/icono_img.png);
 }
 .item-container .icon-enlace:before {
-	background-image: url(icon_herramienta.png);
+	background-image: url(imagenes/icono_enlace.png);
 }
 
 
@@ -1254,6 +1253,7 @@ table td.bck-td {
     background-color: #FFF3C9;
     border-top-left-radius: 20px;
     border-top-right-radius: 0px;
+    font-weight: 600;
 }
 
 .casals_demo-dropdown .bck-dropdown-icon {
@@ -1268,7 +1268,7 @@ table td.bck-td {
 .casals_demo-dropdown .bck-dropdown-icon > .fa {
     border: 0px solid white;
     color: #333;
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 0px;
 }
 
