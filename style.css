@@ -906,7 +906,7 @@ body.is_app .casals_demo-navbar.ocultar {
 /*caja ideas*/
 
 .bck-box.simple {
-    background-color: #F2E7D1;
+    background-color: transparent;
     border-radius: 20px;
     border-bottom-right-radius: 0;
     text-align: left;
