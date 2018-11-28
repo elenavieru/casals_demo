@@ -69,6 +69,14 @@ a:hover, a:active, a:focus {
 /*General */
 
 /*archivo pdf*/
+
+.bck-img2-figure figcaption{
+   padding: 0px 18px 5px;
+    text-align: left;
+}
+
+
+
 .bck-file-attach span{
 overflow: initial;
 }
@@ -77,6 +85,7 @@ overflow: initial;
 .body_clase .content-wrapper {
 	padding-top: 130px;
 	padding-bottom: 0px;
+	background: #fff;
 }
 
 .body_clase.edit .content-wrapper {
@@ -313,7 +322,7 @@ body.is_app .casals_demo-navbar.ocultar {
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdown button,
 .content_type_clase_casals_demo .casals_demo-navbar li {
-	border-radius: 5px;
+	border-radius: 0px;
 	border: none;
 	background-color: transparent;
 	color: black;
@@ -327,15 +336,17 @@ body.is_app .casals_demo-navbar.ocultar {
 
 .content_type_clase_casals_demo .casals_demo-navbar li {
 	font-size: 1.5rem;
+	width: 285px;
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdown button {
-	font-weight: 600;
+	font-weight: 400;
 	width: auto;
 	padding: 0;
-	margin: 0;
+	margin: -18px 0 31px;
 	text-align: left;
 	border: none;
+	color: #fff
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdown button:focus {
@@ -343,18 +354,25 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdown .caret {
-	border-color: black transparent transparent transparent;
+	border-color: #fff transparent transparent transparent;
 	margin-left: 10px;
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .navbar-content {
 	max-width: 1160px;
-	margin: 0 20px;
-	border-bottom: 1px solid #9665AB;
+	margin: -6px 20px 0;
+	border-bottom: 0;
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdownTemas {
 	position: relative;
+    display: inline-block;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding-bottom: 8px;
+    padding-right: 30px;
+    margin-left: 11px;
+
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdownTemas:focus,
@@ -365,15 +383,17 @@ body.is_app .casals_demo-navbar.ocultar {
 .content_type_clase_casals_demo .casals_demo-navbar .dropdownTemas button {
 	background-color: transparent;
 	border: none;
+	margin-left: -18px;
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdownTemas .caret{
-	border-color: #9665AB transparent transparent transparent;
+	border-color: #fff transparent transparent transparent;
 	margin-left: 10px;
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdownTemas .dropdown-menu {
-	left: 50px;
+	left: 0px;
+	top: 69px;
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .navbar-content h2 {
@@ -404,8 +424,10 @@ body.is_app .casals_demo-navbar.ocultar {
 	font-weight: normal;
 	padding-left: 10px;
 	margin-left: 10px;
-	display: inline-block;
-	border-left: 1px dotted grey;
+	display: none;
+	border-left: 1px dotted #fff;
+	color: #fff;
+
 }
 
 .content_type_clase_casals_demo .slider-indicators {
@@ -444,12 +466,12 @@ body.is_app .casals_demo-navbar.ocultar {
 
 .content_type_clase_casals_demo .slider-indicators li.active,
 .content_type_clase_casals_demo .casals_demo-navbar li:hover {
-	background-color: #D9D2F1;
+	background-color: #E9F5FC;
 }
 
 .content_type_clase_casals_demo .casals_demo-navbar .dropdown {
-	display: block;
-	float: left;
+	display: inline-block;
+	float: none;
 	margin: 10px 0;
 }
 
@@ -458,6 +480,7 @@ body.is_app .casals_demo-navbar.ocultar {
 	max-height: 500px;
 	overflow-y: auto;
 	overflow-x: hidden;
+	margin-top: 24px;
 }
 
 .dropdown-menu > li > a {
@@ -474,12 +497,12 @@ body.is_app .casals_demo-navbar.ocultar {
 }
 
 .dropdownTemas .dropdown-menu > li > span {
-	padding-left: 10px;
+	display: none;
 }
 
 .dropdown-menu .title {
 	display: inline-block;
-	width: 300px;
+	width: 410px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
