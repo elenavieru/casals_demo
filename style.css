@@ -1115,13 +1115,19 @@ body.is_app .casals_demo-navbar.ocultar {
 
 .item-container .icon-video:before {
 	background-image: url(imagenes/Icon_video.png);
+	width: 46px;
+    height: 46px;
 }
 
 .item-container .icon-mapa:before {
 	background-image: url(imagenes/icono_img.png);
+    width: 46px;
+    height: 46px;
 }
 .item-container .icon-enlace:before {
 	background-image: url(imagenes/icono_enlace.png);
+	width: 46px;
+    height: 46px;
 }
 
 
