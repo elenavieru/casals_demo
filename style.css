@@ -1,5 +1,65 @@
 /*casals_css21/11*/
 
+
+/*TOC*/
+
+#indice .units ul li.active:not(.disabled), body:not(.isTablet) #indice .units ul li:hover:not(.disabled), #indice .units ul li:focus:not(.disabled) {
+    background: #178FCA;
+}
+
+#indice .units ul li {
+    border-radius: 0px;
+}
+
+#indice .units ul li {
+    background: #A9DDF5;
+    border-radius: 0px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+#indice .unit-content .header {
+    border: 0px solid #9665AB;
+    border-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#indice .unit-content {
+    border-radius: 0px;
+}
+
+#indice .unit-content .header .title {
+    display: none;
+}
+
+#indice .unit-content .header {
+    height: 200px;
+}
+
+.btn-primary, .btn-primary.disabled, .btn-primary.disabled:focus {
+    background-color: #178FCA;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+
+#indice .unit-content .actividades .item .title {
+    font-weight: 400;
+}
+
+a:hover, a:active, a:focus {
+    color: #178FCA;
+}
+
+.content_type_clase_casals_demo .notitle .slider-indicators li.active, 
+.content_type_clase_casals_demo .notitle .casals_demo-navbar li:hover {
+    display: none;
+}
+
+
+
+
+
+
 /*General */
 
 /*archivo pdf*/
