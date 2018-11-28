@@ -1,6 +1,19 @@
 /*casals_css21/11*/
 
 
+/*logo*/
+
+.logo-publisher {
+    display: inline-block;
+    background: url(imagenes/eCASALSnoticias.png);
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 27px;
+    margin-bottom: 1px;
+    margin-right: 10px;
+}
+
+
 /*TOC*/
 
 #indice .units ul li.active:not(.disabled), body:not(.isTablet) #indice .units ul li:hover:not(.disabled), #indice .units ul li:focus:not(.disabled) {
@@ -241,10 +254,6 @@ fieldset[disabled] .content_type_clase_casals_demo .slide_main input {
 
 /* CURSO */
 
-#indice .unit-content {
-    border-radius: 20px;
-}
-
 #indice .unit-content .header.default {
 	background-image: url(../../../images/libro/transparente.png) ! important;
 	background-color: #7aac39;
@@ -289,8 +298,8 @@ fieldset[disabled] .content_type_clase_casals_demo .slide_main input {
 	width: 100%;
 	left: 0;
 	z-index: 100;
-	background-color: #f2f2f2;
-	background: linear-gradient(to bottom, white, #f2f2f2);
+	background-color: #178FCA;
+	background: linear-gradient(to bottom, #178FCA, #178FCA);
 }
 
 body.is_app .casals_demo-navbar {
