@@ -749,6 +749,7 @@ body.is_app .casals_demo-navbar.ocultar {
 
 #actividad .content ul.bck-ul li {
 	list-style: none;
+	text-align: left;
 }
 
 #actividad .content .texto_curso ul li:before, #actividad .content .workspace ul li ul li:before, #actividad .content .texto_curso .bck-ul li:before, #actividad .content .workspace ul li .bck-ul li:before {
@@ -783,6 +784,7 @@ body.is_app .casals_demo-navbar.ocultar {
 	list-style: none;
 	padding: 0;
 	margin-left: 15px;
+	text-align: left;
 }
 
 #actividad .content .texto_curso ul.bck-ul-3 li:before, #actividad .content .workspace ul li ul.bck-ul-3 li:before {
@@ -800,6 +802,7 @@ body.is_app .casals_demo-navbar.ocultar {
     list-style-type: none;
     counter-increment: bck-li-counter 1;
     position: relative;
+    text-align: left;
 }
 
 #actividad .content .texto_curso .bck-ol li:before, #actividad .content .workspace ul li .bck-ol li:before{
@@ -822,6 +825,7 @@ body.is_app .casals_demo-navbar.ocultar {
 	list-style-type: none;
 	counter-reset: bck-li-counter;
 	margin-left: -6px;
+	text-align: left;
 }
 
 
@@ -850,6 +854,7 @@ body.is_app .casals_demo-navbar.ocultar {
 #actividad .content .texto_curso .bck-ol-3, #actividad .content .workspace ul li .bck-ol-3 {
 	list-style-type: none;
 	counter-reset: bck-li-counter;
+	text-align: left;
 }
 
 
@@ -879,6 +884,7 @@ body.is_app .casals_demo-navbar.ocultar {
 	list-style-type: none;
 	counter-reset: bck-li-counter;
 	margin-left: 15px;
+	text-align: left;
 }
 
 
